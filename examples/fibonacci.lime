@@ -1,0 +1,5 @@
+; Fibonacci
+
+fib_rec := \f.\list.\n.\a.\b.= n 0 list (join list (f f [a] (- n 1) b (+ a b)))
+fib := fib_rec fib_rec []
+fib 10 1 1

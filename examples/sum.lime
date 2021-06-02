@@ -1,0 +1,5 @@
+; Sum of a List
+
+sum_rec := \f.\i.\l.= i (- (len l) 1) (at l i) (+ (at l i) (f f (+ i 1) l))
+sum := sum_rec sum_rec 0
+sum [1, 2, 3]

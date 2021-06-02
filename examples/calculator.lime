@@ -1,0 +1,12 @@
+; Calculator
+
+case_div := \op.= op "/" / %
+case_mul := \op.= op "*" * (case_div op)
+case_sub := \op.= op "-" - (case_mul op)
+case_add := \op.= op "+" + (case_sub op)
+
+value_a := num (get())
+operator := case_add (get())
+value_b := num (get())
+
+operator value_a value_b

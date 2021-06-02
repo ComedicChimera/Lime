@@ -1,0 +1,5 @@
+; Truth Machine
+truth_rec := \f.\n.= n 0 (print 0) (do (print 1) (f f n))
+truth := truth_rec truth_rec
+
+truth (num (get()))

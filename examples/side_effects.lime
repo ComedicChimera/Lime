@@ -1,0 +1,5 @@
+; Display of Managing Side-Effects
+
+prompt := \msg.do (print msg) (num (get()))
+
+* (prompt "Enter a number:") 2

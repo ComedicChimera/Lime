@@ -1,0 +1,16 @@
+; Boolean Algebra
+
+true := \x.\y.x
+false := \x.\y.y
+
+print_bool := \b.b "true" "false"
+
+and := \a.\b.a b false
+or := \a.\b.a true b
+not := \a.\x.\y.a y x
+xor := \a.\b.a (not b) b
+
+print_bool (not true)
+print_bool (and true true)
+print_bool (or false false)
+print_bool (xor true false)

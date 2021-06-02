@@ -1,0 +1,5 @@
+; Factorial
+
+fact_rec := \f.\n.= n 1 n (* n (f f (- n 1)))
+fact := fact_rec fact_rec
+fact 7
