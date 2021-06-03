@@ -16,8 +16,11 @@ doing some cursory reading of the first two parts of this file.
 ## <a name="run"> Running Lime
 
 The Lime interpreter is written in Python and can be run from the file
-`lime.py`.  It accepts a single command line argument which is the filename to
-run.
+`lime.py`.  Its dependencies can be installed by running
+    
+    pip install -r requirements.txt
+    
+It accepts a single command line argument which is the filename to run.
 
     python lime.py [filename]
 
